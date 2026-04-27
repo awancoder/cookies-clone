@@ -23,12 +23,16 @@ function initMobileMenu() {
   const menu = document.getElementById("mobile-menu")
 
   toggle.addEventListener("click", () => {
+    toggle.classList.toggle("active")
     menu.classList.toggle("open")
   })
 
   // Close on link click
   menu.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => menu.classList.remove("open"))
+    link.addEventListener("click", () => {
+      menu.classList.remove("open")
+      toggle.classList.remove("active")
+    })
   })
 }
 

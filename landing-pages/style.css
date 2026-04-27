@@ -63,15 +63,52 @@ img { max-width: 100%; display: block; }
 .navbar-links { display: flex; align-items: center; gap: 32px; }
 .navbar-links a { font-size: 14px; font-weight: 500; color: var(--text-secondary); transition: var(--transition); }
 .navbar-links a:hover { color: var(--text-primary); }
-.navbar-toggle { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; padding: 4px; }
-.navbar-toggle span { display: block; width: 22px; height: 2px; background: var(--text-primary); border-radius: 2px; transition: var(--transition); }
-.mobile-menu { display: none; flex-direction: column; gap: 16px; padding: 20px 24px; border-top: 1px solid var(--border); }
-.mobile-menu a { font-size: 15px; color: var(--text-secondary); font-weight: 500; }
+.navbar-toggle {
+  display: none; background: none; border: none; cursor: pointer;
+  flex-direction: column; gap: 5px; padding: 8px;
+  width: 36px; height: 36px; align-items: center; justify-content: center;
+  border-radius: 8px;
+  transition: background var(--transition);
+}
+.navbar-toggle:hover { background: rgba(255,255,255,0.06); }
+.navbar-toggle span {
+  display: block; width: 20px; height: 2px;
+  background: var(--text-primary); border-radius: 2px;
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+}
+/* Hamburger → X animation */
+.navbar-toggle.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.navbar-toggle.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.navbar-toggle.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.mobile-menu {
+  display: flex; flex-direction: column; gap: 4px;
+  padding: 0 24px;
+  max-height: 0; overflow: hidden;
+  opacity: 0;
+  transition: max-height 400ms cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 300ms ease,
+              padding 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu.open {
+  max-height: 360px; opacity: 1;
+  padding: 16px 24px 20px;
+  border-top: 1px solid var(--border);
+}
+.mobile-menu a {
+  font-size: 15px; color: var(--text-secondary); font-weight: 500;
+  padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.04);
+  transition: color var(--transition);
+}
+.mobile-menu a:last-child { border-bottom: none; }
+.mobile-menu a:hover { color: var(--text-primary); }
+.mobile-menu .btn-nav { margin-top: 8px; text-align: center; justify-content: center; }
 
 @media (max-width: 768px) {
+  .navbar { padding: 12px 0; }
   .navbar-links { display: none; }
   .navbar-toggle { display: flex; }
-  .mobile-menu.open { display: flex; }
 }
 
 /* --- Buttons --- */
@@ -156,6 +193,26 @@ img { max-width: 100%; display: block; }
   .hero-actions { justify-content: center; }
   .hero-stats { justify-content: center; }
   .hero-visual { display: none; }
+}
+@media (max-width: 480px) {
+  .hero { padding: 100px 0 60px; min-height: auto; }
+  .hero-title { font-size: 28px; }
+  .hero-desc { font-size: 15px; }
+  .hero-actions { flex-direction: column; align-items: center; }
+  .hero-actions .btn-lg { width: 100%; justify-content: center; }
+  .hero-stats { gap: 20px; }
+  .stat-number { font-size: 22px; }
+  .section-title { font-size: 24px; }
+  .features { padding: 60px 0; }
+  .section-header { margin-bottom: 40px; }
+  .feature-card { padding: 24px; }
+  .how-it-works { padding: 60px 0; }
+  .step { gap: 16px; }
+  .step-number { width: 40px; height: 40px; font-size: 16px; }
+  .download { padding: 60px 0; }
+  .download-card { padding: 32px 20px; }
+  .download-actions { flex-direction: column; align-items: center; }
+  .download-actions .btn-lg { width: 100%; justify-content: center; }
 }
 
 /* --- Browser Mockup (Hero) --- */
