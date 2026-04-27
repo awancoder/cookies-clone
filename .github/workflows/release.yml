@@ -1,0 +1,53 @@
+name: "Release Extension"
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build extension
+        run: yarn build
+
+      - name: Package extension (zip)
+        run: |
+          cd build/chrome-mv3-prod
+          zip -r ../../cookies-clone-${{ github.ref_name }}.zip .
+          cd ../..
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: "Cookies Clone ${{ github.ref_name }}"
+          body: |
+            ## 🍪 Cookies Clone ${{ github.ref_name }}
+
+            ### Cara Install
+            1. Download file `cookies-clone-${{ github.ref_name }}.zip` di bawah
+            2. Buka `chrome://extensions` di Chrome
+            3. Aktifkan **Developer mode** (toggle kanan atas)
+            4. Klik **Load unpacked**
+            5. Extract file zip, lalu pilih foldernya
+            6. Extension siap digunakan! 🎉
+
+            ### Cara Pakai
+            - **Export**: Buka website yang sudah login → Klik icon extension → Copy to Clipboard / Download JSON
+            - **Import**: Buka website di browser lain → Klik icon extension → Tab Import → Paste / Upload → Import Cookies → Refresh
+          files: cookies-clone-${{ github.ref_name }}.zip
+          generate_release_notes: true
