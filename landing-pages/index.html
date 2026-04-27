@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Cookies Clone — Transfer Browser Cookies Instantly | Free Chrome Extension</title>
+  <meta name="description" content="Clone cookies from one browser to another. Transfer login sessions instantly without re-entering passwords. Free, open-source Chrome extension by Awan Digitals." />
+  <meta name="keywords" content="cookies clone, browser extension, transfer cookies, clone login, session transfer, chrome extension, export cookies, import cookies, cookie manager, login transfer" />
+  <meta name="author" content="Awan Digitals" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://cookies-clone.awandigitals.com/" />
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#050816" />
+  <meta name="color-scheme" content="dark" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cookies-clone.awandigitals.com/" />
+  <meta property="og:title" content="Cookies Clone — Transfer Browser Cookies Instantly" />
+  <meta property="og:description" content="Clone cookies from one browser to another. Transfer login sessions instantly without re-entering passwords." />
+  <meta property="og:image" content="https://cookies-clone.awandigitals.com/assets/web-app-manifest-512x512.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:site_name" content="Cookies Clone" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Cookies Clone — Transfer Browser Cookies Instantly" />
+  <meta name="twitter:description" content="Clone cookies from one browser to another. Transfer login sessions instantly without re-entering passwords." />
+  <meta name="twitter:image" content="https://cookies-clone.awandigitals.com/assets/web-app-manifest-512x512.png" />
+
+  <!-- Favicon Chain -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/site.webmanifest" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Cookies Clone",
+    "description": "Clone cookies from one browser to another. Transfer login sessions instantly without re-entering passwords.",
+    "url": "https://cookies-clone.awandigitals.com",
+    "applicationCategory": "BrowserApplication",
+    "operatingSystem": "Chrome",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Awan Digitals",
+      "url": "https://github.com/awancoder"
+    },
+    "softwareVersion": "0.0.1",
+    "downloadUrl": "https://github.com/awancoder/cookies-clone/releases"
+  }
+  </script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#" class="navbar-brand">
+        <img src="assets/favicon-96x96.png" alt="Cookies Clone" class="navbar-logo" />
+        <span>Cookies Clone</span>
+      </a>
+      <div class="navbar-links">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#download" class="btn btn-nav">Download</a>
+      </div>
+      <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#download" class="btn btn-nav">Download</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-content" data-animate="fade-up">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Open Source & Free
+        </div>
+        <h1 class="hero-title">
+          Transfer Browser<br />
+          <span class="gradient-text">Cookies Instantly</span>
+        </h1>
+        <p class="hero-desc">
+          Clone cookies from one browser to another. Transfer login sessions
+          without re-entering passwords — just export, import, and you're in.
+        </p>
+        <div class="hero-actions">
+          <a href="#download" class="btn btn-primary btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Extension
+          </a>
+          <a href="https://github.com/awancoder/cookies-clone" target="_blank" class="btn btn-outline btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            View on GitHub
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number" data-count="100">0</span><span class="stat-suffix">%</span>
+            <span class="stat-label">Free</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number" data-count="1">0</span><span class="stat-suffix">-Click</span>
+            <span class="stat-label">Export</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number" data-count="0">0</span><span class="stat-suffix"> Login</span>
+            <span class="stat-label">Needed</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" data-animate="fade-up" data-delay="200">
+        <div class="browser-mockup">
+          <div class="browser-header">
+            <div class="browser-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="browser-address">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              facebook.com
+            </div>
+          </div>
+          <div class="browser-body">
+            <div class="extension-popup">
+              <div class="ext-header">
+                <div class="ext-icon">🍪</div>
+                <div>
+                  <div class="ext-title">Cookies Clone</div>
+                  <div class="ext-subtitle">Export & Import Cookies</div>
+                </div>
+              </div>
+              <div class="ext-domain">
+                <span class="ext-dot"></span>
+                .facebook.com
+              </div>
+              <div class="ext-tabs">
+                <div class="ext-tab active">📤 Export</div>
+                <div class="ext-tab">📥 Import</div>
+              </div>
+              <div class="ext-card">
+                <div class="ext-card-top">
+                  <span class="ext-label">ACTIVE DOMAIN</span>
+                  <span class="ext-count">🍪 9</span>
+                </div>
+                <div class="ext-card-domain">facebook.com</div>
+              </div>
+              <div class="ext-btn ext-btn-primary">📋 Copy to Clipboard</div>
+              <div class="ext-btn ext-btn-secondary">💾 Download JSON</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0 40C360 100 720 0 1080 60C1260 90 1380 50 1440 40V100H0V40Z" fill="var(--bg-primary)"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-badge">Features</span>
+        <h2 class="section-title">Everything you need to<br /><span class="gradient-text">transfer cookies</span></h2>
+        <p class="section-desc">Simple, fast, and secure. Export cookies from one browser and import them to another in seconds.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card" data-animate="fade-up" data-delay="0">
+          <div class="feature-icon">📤</div>
+          <h3 class="feature-title">One-Click Export</h3>
+          <p class="feature-desc">Instantly grab all cookies from the active tab. Copy to clipboard or download as a JSON file.</p>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="100">
+          <div class="feature-icon">📥</div>
+          <h3 class="feature-title">Easy Import</h3>
+          <p class="feature-desc">Paste cookies from clipboard or upload a JSON file. Preview before importing to ensure accuracy.</p>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="200">
+          <div class="feature-icon">🌐</div>
+          <h3 class="feature-title">Auto-Detect Domain</h3>
+          <p class="feature-desc">Automatically detects the active domain and fetches all related cookies including subdomains.</p>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="300">
+          <div class="feature-icon">👁️</div>
+          <h3 class="feature-title">Cookie Preview</h3>
+          <p class="feature-desc">View a detailed list of all cookies before exporting or importing. See name, domain, and expiry.</p>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="400">
+          <div class="feature-icon">📊</div>
+          <h3 class="feature-title">Import Results</h3>
+          <p class="feature-desc">Get detailed statistics after import — see how many cookies were set successfully or failed.</p>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="500">
+          <div class="feature-icon">🔓</div>
+          <h3 class="feature-title">Open Source</h3>
+          <p class="feature-desc">Fully open source and transparent. Inspect the code, contribute, or fork it for your own needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-badge">How It Works</span>
+        <h2 class="section-title">Three simple steps to<br /><span class="gradient-text">clone your session</span></h2>
+      </div>
+      <div class="steps">
+        <div class="step" data-animate="fade-up" data-delay="0">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <div class="step-icon-wrapper">
+              <div class="step-icon">📤</div>
+            </div>
+            <h3 class="step-title">Export Cookies</h3>
+            <p class="step-desc">Open any website where you're logged in. Click the extension icon and copy all cookies to your clipboard or download them as JSON.</p>
+            <div class="step-visual">
+              <div class="step-browser">
+                <div class="step-browser-bar">
+                  <span class="step-dot"></span>
+                  <span class="step-dot"></span>
+                  <span class="step-dot"></span>
+                  <span class="step-url">Browser A — Logged In ✅</span>
+                </div>
+                <div class="step-browser-body">
+                  <div class="step-action">Click <strong>"Copy to Clipboard"</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-connector" data-animate="fade-up">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+        </div>
+
+        <div class="step" data-animate="fade-up" data-delay="200">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <div class="step-icon-wrapper">
+              <div class="step-icon">📋</div>
+            </div>
+            <h3 class="step-title">Transfer Data</h3>
+            <p class="step-desc">The cookies are copied as JSON to your clipboard. You can also save them as a file and transfer to any device or browser.</p>
+            <div class="step-visual">
+              <div class="step-json">
+                <code>{ "cookies": [ { "name": "session", "domain": ".facebook.com" } ... ] }</code>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-connector" data-animate="fade-up">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+        </div>
+
+        <div class="step" data-animate="fade-up" data-delay="400">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <div class="step-icon-wrapper">
+              <div class="step-icon">🚀</div>
+            </div>
+            <h3 class="step-title">Import & Login</h3>
+            <p class="step-desc">Open the same website in another browser. Paste the cookies, import them, refresh the page — and you're instantly logged in!</p>
+            <div class="step-visual">
+              <div class="step-browser">
+                <div class="step-browser-bar">
+                  <span class="step-dot"></span>
+                  <span class="step-dot"></span>
+                  <span class="step-dot"></span>
+                  <span class="step-url">Browser B — Logged In ✅</span>
+                </div>
+                <div class="step-browser-body">
+                  <div class="step-action step-success">🎉 <strong>Automatically Logged In!</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section class="download" id="download">
+    <div class="container">
+      <div class="download-card" data-animate="fade-up">
+        <div class="download-bg">
+          <div class="download-orb download-orb-1"></div>
+          <div class="download-orb download-orb-2"></div>
+        </div>
+        <div class="download-content">
+          <h2 class="download-title">Ready to get started?</h2>
+          <p class="download-desc">Download Cookies Clone for free. Available as a Chrome extension — open source and always free.</p>
+          <div class="download-actions">
+            <a href="https://github.com/awancoder/cookies-clone/releases" target="_blank" class="btn btn-primary btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download from GitHub
+            </a>
+            <a href="https://github.com/awancoder/cookies-clone" target="_blank" class="btn btn-ghost btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              View Source Code
+            </a>
+          </div>
+          <p class="download-note">⚠️ This extension is for personal and educational use only.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/favicon-96x96.png" alt="Cookies Clone" class="footer-logo" />
+        <span>Cookies Clone</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/awancoder/cookies-clone" target="_blank">GitHub</a>
+        <a href="https://github.com/awancoder/cookies-clone/releases" target="_blank">Releases</a>
+        <a href="https://github.com/awancoder/cookies-clone/issues" target="_blank">Issues</a>
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 <a href="https://github.com/awancoder" target="_blank">Awan Digitals</a>. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
