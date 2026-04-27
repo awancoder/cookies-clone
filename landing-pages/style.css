@@ -88,7 +88,23 @@ img { max-width: 100%; display: block; }
 .btn-outline:hover { border-color: var(--accent); background: rgba(99,102,241,0.08); }
 .btn-ghost { background: rgba(255,255,255,0.06); color: var(--text-primary); }
 .btn-ghost:hover { background: rgba(255,255,255,0.12); }
-.btn-nav { padding: 8px 18px; font-size: 13px; background: var(--gradient); color: #fff; border-radius: 8px; }
+.btn-nav {
+  padding: 9px 22px;
+  font-size: 13px;
+  font-weight: 700;
+  background: #fff;
+  color: #050816;
+  border-radius: 8px;
+  box-shadow: 0 0 16px rgba(255,255,255,0.2), 0 2px 8px rgba(0,0,0,0.3);
+  letter-spacing: 0.02em;
+  transition: all var(--transition);
+}
+.btn-nav:hover {
+  background: #e0e7ff;
+  color: #050816;
+  box-shadow: 0 0 24px rgba(255,255,255,0.35), 0 4px 12px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
 
 /* --- Hero --- */
 .hero {
